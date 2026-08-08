@@ -5,7 +5,7 @@ import org.apache.shiro.spring.boot.faceid.token.FaceIDLoginToken;
 
 /**
  * Kisso Stateful AuthorizingRealm
- * @author 		： <a href="https://github.com/easy-4-java">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class FaceIDStatefulAuthorizingRealm extends AbstractAuthorizingRealm {
 
