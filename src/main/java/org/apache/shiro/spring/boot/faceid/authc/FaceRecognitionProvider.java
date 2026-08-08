@@ -20,7 +20,7 @@ import org.apache.shiro.spring.boot.faceid.FaceInfo;
 
 /**
  * TODO
- * @author 		： <a href="https://github.com/hiwepy">wandl</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public interface FaceRecognitionProvider {
 
