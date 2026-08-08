@@ -17,7 +17,7 @@ package org.apache.shiro.spring.boot.faceid;
 
 /**
  * 人脸的类型
- * @author ： <a href="https://github.com/hiwepy">wandl</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public enum FaceType {
 
