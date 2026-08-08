@@ -17,8 +17,8 @@ package org.apache.shiro.spring.boot.faceid.authc;
 
 import java.nio.charset.StandardCharsets;
 
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
 
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -35,7 +35,7 @@ import com.alibaba.fastjson.JSONObject;
 
 /**
  * 人脸识别 认证 (authentication)过滤器
- * @author ： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class FaceIDAuthenticatingFilter extends AbstractTrustableAuthenticatingFilter {
 
