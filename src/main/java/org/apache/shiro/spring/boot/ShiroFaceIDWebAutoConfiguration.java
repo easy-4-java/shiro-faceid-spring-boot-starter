@@ -17,6 +17,13 @@ import org.springframework.context.annotation.Configuration;
 })
 @ConditionalOnProperty(prefix = ShiroFaceIDProperties.PREFIX, value = "enabled", havingValue = "true")
 @EnableConfigurationProperties({ ShiroFaceIDProperties.class })
+/**
+ * Auto-configuration for ShiroFaceIDWeb integration.
+ * <p>Registers the necessary beans when the feature is enabled.</p>
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 1.0.0
+ */
 public class ShiroFaceIDWebAutoConfiguration extends AbstractShiroWebConfiguration implements ApplicationContextAware {
 
 	private ApplicationContext applicationContext;

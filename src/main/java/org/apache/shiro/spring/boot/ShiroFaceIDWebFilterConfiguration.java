@@ -23,6 +23,13 @@ import org.springframework.context.annotation.Configuration;
 })
 @ConditionalOnProperty(prefix = ShiroFaceIDProperties.PREFIX, value = "enabled", havingValue = "true")
 @EnableConfigurationProperties({ ShiroFaceIDProperties.class })
+/**
+ * Filter configuration for ShiroFaceIDWeb authentication.
+ * <p>Registers authentication filters and security filter chains.</p>
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 1.0.0
+ */
 public class ShiroFaceIDWebFilterConfiguration implements ApplicationContextAware {
 
 	protected static final Logger LOG = LoggerFactory.getLogger(ShiroFaceIDWebFilterConfiguration.class);
