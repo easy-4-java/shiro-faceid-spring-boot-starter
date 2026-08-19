@@ -20,6 +20,7 @@ import org.apache.shiro.biz.authz.principal.ShiroPrincipal;
 /**
  * TODO
  * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 1.0.0
  */
 @SuppressWarnings("serial")
 public class FaceIDStatelessPrincipal extends ShiroPrincipal {

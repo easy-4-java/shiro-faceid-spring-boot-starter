@@ -42,14 +42,32 @@ import com.google.common.collect.Maps;
  */
 public class FaceIDAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
 
+	/**
+	 * Constructs a new face i d authentication success handler instance.
+	 *
+	 */
 	public FaceIDAuthenticationSuccessHandler() {
 	}
 	 
+	/**
+	 * Determines whether supports.
+	 *
+	 * @param token the token
+	 * @return the result
+	 */
 	@Override
 	public boolean supports(AuthenticationToken token) {
 		return SubjectUtils.isAssignableFrom(token.getClass(), FaceIDLoginToken.class);
 	}
 
+	/**
+	 * on Authentication Success.
+	 *
+	 * @param token the token
+	 * @param request the request
+	 * @param response the response
+	 * @param subject the subject
+	 */
 	@Override
 	public void onAuthenticationSuccess(AuthenticationToken token, ServletRequest request, ServletResponse response,
 			Subject subject) {
@@ -69,6 +87,11 @@ public class FaceIDAuthenticationSuccessHandler implements AuthenticationSuccess
 
 	}
 
+	/**
+	 * Returns the order.
+	 *
+	 * @return the order
+	 */
 	@Override
 	public int getOrder() {
 		return Integer.MAX_VALUE - 2;

@@ -20,6 +20,8 @@ import org.apache.shiro.authc.AuthenticationException;
 
 /**
  *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 1.0.0
  */
 @SuppressWarnings("serial")
 public class AuthenticationFaceIDNotFoundException extends AuthenticationException {

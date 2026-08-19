@@ -28,6 +28,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 public class ShiroFaceIDProperties {
 
+	/**
+	 * Returns the enabled.
+	 *
+	 * @return the enabled
+	 */
 	public static final String PREFIX = "shiro.kisso";
 	
 	/**
@@ -35,10 +40,20 @@ public class ShiroFaceIDProperties {
 	 */
 	private boolean enabled = false;
 	
+	/**
+	 * Returns the enabled.
+	 *
+	 * @return the enabled
+	 */
 	public boolean isEnabled() {
 		return enabled;
 	}
 
+	/**
+	 * Sets the enabled.
+	 *
+	 * @param enabled the enabled
+	 */
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
 	}

@@ -37,16 +37,29 @@ import com.alibaba.fastjson.JSONObject;
 /**
  * 人脸识别 认证 (authentication)过滤器
  * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 1.0.0
  */
 public class FaceIDAuthenticatingFilter extends AbstractTrustableAuthenticatingFilter {
 
 	private static final Logger LOG = LoggerFactory.getLogger(FaceIDAuthenticatingFilter.class);
 	private FaceRecognitionProvider faceRecognitionProvider;
 	
+	/**
+	 * Constructs a new face i d authenticating filter instance.
+	 *
+	 */
 	public FaceIDAuthenticatingFilter() {
 		super();
 	}
 	
+	/**
+	 * Determines whether is access allowed.
+	 *
+	 * @param request the request
+	 * @param response the response
+	 * @param mappedValue the mapped value
+	 * @return the result
+	 */
 	@Override
 	protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
 		// 判断是否无状态
@@ -78,6 +91,14 @@ public class FaceIDAuthenticatingFilter extends AbstractTrustableAuthenticatingF
 		return super.isAccessAllowed(request, response, mappedValue);
 	}
 	
+	/**
+	 * Determines whether on access denied.
+	 *
+	 * @param request the request
+	 * @param response the response
+	 * @return the result
+	 * @throws Exception if an error occurs
+	 */
 	@Override
 	protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
 		
